@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: black solid 2px;
+  border-style: dotted;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 20px;
+}
+
+.blue {
+  background-color: rgb(64, 64, 247);
+  height: 50%;
+  margin-top: 10px;
+}
+
+.orange {
+  background-color: rgb(209, 116, 72);
+  height: 50%;
+  margin-bottom: 10px;
+}
