@@ -1,0 +1,78 @@
+:root {
+  --color-cabecera: #000000;
+  --color-cabecera-text: rgb(239, 219, 90);
+  --color-nav: rgb(153, 153, 153);
+  --color-nav-text: rgb(31, 242, 37);
+  --color-main: rgb(221, 221, 221);
+  --color-main-text: rgb(204, 0, 204);
+  --color-footer: rgb(187, 187, 187);
+  --color-footer-text: rgb(165, 49, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+#cabeceira {
+  background-color: var(--color-cabecera);
+  font-size: 20px;
+  color: var(--color-cabecera-text);
+  padding: 20px 10px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  flex: 1;
+}
+main {
+  flex: 4;
+}
+#navegacion {
+  background-color: var(--color-nav);
+  height: 100%;
+  padding: 40px 0 0 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: var(--color-nav-text);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#contido {
+  background-color: var(--color-main);
+  padding: 20px;
+  height: 100%;
+}
+
+#contido h1 {
+  color: var(--color-main-text);
+}
+
+#pe {
+  background-color: var(--color-footer);
+  font-size: 20px;
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: 20px;
+}
