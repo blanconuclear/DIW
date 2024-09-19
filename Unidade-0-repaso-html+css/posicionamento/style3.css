@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 40vh;
+  border: rgb(255, 0, 0) 2px solid;
+  border-style: dotted;
+  padding: 25px;
+}
+
+.yellow,
+.blue {
+  width: 50%;
+}
+
+.blue {
+  background-color: rgb(39, 157, 187);
+  border: solid red 0.5px;
+}
+
+.yellow {
+  background-color: rgb(212, 200, 28);
+  border: solid rgb(18, 63, 18) 0.5px;
+}

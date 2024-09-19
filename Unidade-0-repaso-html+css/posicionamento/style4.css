@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  border: black solid;
+  padding: 20px;
+  width: 1000px;
+}
+
+.container-left,
+.container-rigth {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  height: 100%;
+}
+
+.container-left .cuadro1 {
+  background-color: green;
+  height: 50%;
+  margin: 0 10px 10px 0;
+}
+
+.container-left .cuadro2 {
+  background-color: red;
+  height: 50%;
+  margin: 10px 10px 0 0;
+}
+
+.container-rigth .cuadro3 {
+  background-color: blue;
+  height: 20%;
+  margin: 0 0 10px 10px;
+}
+
+.container-rigth .cuadro4 {
+  background-color: violet;
+  height: 80%;
+  margin: 10px 0 0 10px;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 10px;
+}
+
+.container-left,
+.container-rigth {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  height: 100%;
+}
+
+.container-rigth .cuadro3 {
+  background-color: rgb(0, 255, 98);
+  height: 30%;
+  margin: 0 0 5px 5px;
+}
+
+.container-rigth .cuadro4 {
+  background-color: rgb(130, 155, 238);
+  height: 60%;
+  margin: 5px 0 5px 5px;
+}
+
+.container-rigth .cuadro5 {
+  background-color: rgb(236, 130, 30);
+  height: 10%;
+  margin: 5px 0 0 5px;
+}
+
+.container-left .cuadro1 {
+  background-color: rgb(30, 236, 167);
+  height: 50%;
+  margin: 0 5px 5px 0;
+}
+
+.container-left .cuadro2 {
+  height: 50%;
+}
+
+.cuadro-interior-grande {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.cuadro-interior-grande .cuadro1-3 {
+  background-color: violet;
+  width: 50%;
+  margin: 5px 5px 0 5px;
+}
+
+.cuadro-interior-pequeño {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cuadro-interior-pequeño .cuadro-interior-pequeño-1 {
+  flex: 30%;
+  background-color: red;
+  margin: 5px 5px 5px 0;
+}
+
+.cuadro-interior-pequeño .cuadro-interior-pequeño-2 {
+  flex: 70%;
+  background-color: orange;
+  margin: 5px 5px 0 0;
+}

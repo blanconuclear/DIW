@@ -10,15 +10,15 @@ body {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.309);
   font-size: 20px;
   font-weight: bold;
 }
 
 header .header-main {
-  background-color: brown;
   text-align: center;
   padding: 20px 0;
+  background-color: #d8555d;
+  margin: 0 0 5px 0;
 }
 
 .row {
@@ -34,24 +34,24 @@ header .header-main {
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #d8555d;
 }
 
 .row section {
-  flex: 50%;
-  height: 100%;
-  padding-top: 20px;
-}
-
-section {
   border: solid rgb(51, 153, 153);
   text-align: center;
   display: flex;
   flex-direction: column;
+  flex: 50%;
+  height: 100%;
+  padding-top: 20px;
+  background-color: #d8555d;
 }
 
 section header {
   border: solid salmon;
   flex: 20%;
+  background-color: #d8555d;
 }
 
 section article {
@@ -62,6 +62,7 @@ section article {
 section footer {
   border: solid rgb(46, 34, 93);
   flex: 25%;
+  background-color: #d8555d;
 }
 
 section header,
