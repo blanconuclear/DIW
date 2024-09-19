@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   height: 100vh;
   color: rgb(255, 255, 255);
   font-family: sans-serif;
@@ -12,13 +12,15 @@ body {
   flex-direction: column;
   font-size: 20px;
   font-weight: bold;
+  padding: 20px;
+  padding-bottom: 30px;
 }
 
 header .header-main {
   text-align: center;
   padding: 20px 0;
   background-color: #d8555d;
-  margin: 0 0 5px 0;
+  margin: 0 10px 10px 10px;
 }
 
 .row {
@@ -35,10 +37,10 @@ header .header-main {
   align-items: center;
   height: 100%;
   background-color: #d8555d;
+  margin: 10px;
 }
 
 .row section {
-  border: solid rgb(51, 153, 153);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,23 +48,23 @@ header .header-main {
   height: 100%;
   padding-top: 20px;
   background-color: #d8555d;
+  margin: 10px;
 }
 
 section header {
-  border: solid salmon;
   flex: 20%;
-  background-color: #d8555d;
+  background-color: rgb(185, 183, 117);
 }
 
 section article {
-  border: solid rgb(114, 250, 146);
   flex: 55%;
+  margin: 20px;
+  background-color: rgb(185, 183, 117);
 }
 
 section footer {
-  border: solid rgb(46, 34, 93);
   flex: 25%;
-  background-color: #d8555d;
+  background-color: rgb(185, 183, 117);
 }
 
 section header,
