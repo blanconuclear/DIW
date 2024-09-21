@@ -9,6 +9,7 @@
   height: 100vh;
   border: black 2px solid;
   border-style: dotted;
+  justify-content: space-between;
 }
 
 .blue,

@@ -19,25 +19,25 @@
 }
 
 .container-rigth .cuadro3 {
-  background-color: rgb(0, 255, 98);
+  background-color: rgb(56, 120, 0);
   height: 30%;
   margin: 0 0 5px 5px;
 }
 
 .container-rigth .cuadro4 {
-  background-color: rgb(130, 155, 238);
+  background-color: rgb(1, 80, 159);
   height: 60%;
   margin: 5px 0 5px 5px;
 }
 
 .container-rigth .cuadro5 {
-  background-color: rgb(236, 130, 30);
+  background-color: rgb(202, 158, 97);
   height: 10%;
   margin: 5px 0 0 5px;
 }
 
 .container-left .cuadro1 {
-  background-color: rgb(30, 236, 167);
+  background-color: rgb(76, 235, 169);
   height: 50%;
   margin: 0 5px 5px 0;
 }
@@ -53,7 +53,7 @@
 }
 
 .cuadro-interior-grande .cuadro1-3 {
-  background-color: violet;
+  background-color: rgb(240, 0, 255);
   width: 50%;
   margin: 5px 5px 0 5px;
 }
@@ -66,12 +66,12 @@
 
 .cuadro-interior-pequeño .cuadro-interior-pequeño-1 {
   flex: 30%;
-  background-color: red;
+  background-color: rgb(254, 0, 0);
   margin: 5px 5px 5px 0;
 }
 
 .cuadro-interior-pequeño .cuadro-interior-pequeño-2 {
   flex: 70%;
-  background-color: orange;
+  background-color: rgb(255, 109, 0);
   margin: 5px 5px 0 0;
 }

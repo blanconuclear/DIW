@@ -18,11 +18,11 @@
 }
 
 .blue {
-  background-color: rgb(39, 157, 187);
+  background-color: rgb(224, 255, 255);
   border: solid red 0.5px;
 }
 
 .yellow {
-  background-color: rgb(212, 200, 28);
+  background-color: rgb(240, 230, 140);
   border: solid rgb(18, 63, 18) 0.5px;
 }

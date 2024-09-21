@@ -17,13 +17,13 @@ body {
 }
 
 .blue {
-  background-color: rgb(64, 64, 247);
+  background-color: rgb(100, 149, 237);
   flex: 1;
   margin-top: 10px;
 }
 
 .orange {
-  background-color: rgb(209, 116, 72);
+  background-color: rgb(255, 127, 80);
   height: 50%;
   flex: 1;
   margin-bottom: 10px;
