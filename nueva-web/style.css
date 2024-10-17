@@ -59,7 +59,7 @@ button {
 /* Sección Principal */
 .main-section {
   height: 400px;
-  background-image: url("/img/pexels-cottonbro-8102734.jpg");
+  background-image: url("img/pexels-cottonbro-8102734.jpg");
   background-size: cover; /* Hace que la imagen cubra toda la sección */
   background-position: center; /* Centra la imagen en la sección */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
