@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Tablero Mágico</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo_bueno.png" />
+    <!-- Ajusta la ruta y el tipo de archivo según tu imagen -->
+
     <script
       src="https://kit.fontawesome.com/a021786078.js"
       crossorigin="anonymous"
@@ -14,9 +17,14 @@
   <body>
     <!-- Cabecera -->
     <header>
-      <div class="logo">El Tablero Mágico</div>
+      <div class="logo">
+        <img src="img/logo_bueno.png" alt="Logo El Tablero Mágico" />
+      </div>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
-        <ul>
+        <ul id="menu">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Acerca de</a></li>
           <li><a href="#products">Productos</a></li>
@@ -108,28 +116,6 @@
           </p>
           <button class="buy-button">Comprar</button>
         </div>
-        <div class="product-item">
-          <img src="img/monopoli.jpg" alt="" />
-          <h3>Producto</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-            placeat ea consequuntur quidem, iusto alias soluta odio! Quidem vel
-            minima consectetur iste amet officiis, alias, ipsam quibusdam porro
-            deserunt quisquam!
-          </p>
-          <button class="buy-button">Comprar</button>
-        </div>
-        <div class="product-item">
-          <img src="img/monopoli.jpg" alt="" />
-          <h3>Producto</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-            placeat ea consequuntur quidem, iusto alias soluta odio! Quidem vel
-            minima consectetur iste amet officiis, alias, ipsam quibusdam porro
-            deserunt quisquam!
-          </p>
-          <button class="buy-button">Comprar</button>
-        </div>
       </div>
     </section>
 
@@ -151,5 +137,13 @@
       <br />
       <p>Contacto: info@eltableromagico.com</p>
     </footer>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("show");
+        });
+    </script>
   </body>
 </html>

@@ -29,9 +29,8 @@ header {
   padding: 1rem 2rem;
 }
 
-.logo {
-  color: var(--blanco);
-  font-size: 1.5rem;
+.logo img {
+  width: 70px;
 }
 
 nav ul {
@@ -70,17 +69,19 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  margin: 32px 32px 0 32px;
 }
 
 .main-section h1 {
   color: var(--marron-oscuro);
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .main-section p {
   color: var(--marron-oscuro);
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -90,6 +91,7 @@ button {
   padding: 0.8rem 1.5rem;
   border: none;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .main-button:hover {
@@ -223,10 +225,45 @@ footer p {
   nav ul {
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
   }
 
   nav ul li {
     margin: 0.5rem 0;
+  }
+}
+
+/* Estilos adicionales para el menú hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--blanco);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--marron-oscuro);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    position: relative;
   }
 }
