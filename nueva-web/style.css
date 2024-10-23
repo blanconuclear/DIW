@@ -103,9 +103,9 @@ button {
 
 /* Sección de Productos */
 .product-section {
-  background-color: var(--blanco);
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, white, #4a2c2a1d);
 }
 
 .product-section h2 {
