@@ -92,13 +92,27 @@ button {
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--marron-medio) 50%,
+    var(--beige-claro) 50%
+  );
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s, color 0.5s, transform 0.5s;
 }
 
 .main-button:hover {
-  background-color: var(--beige-claro);
+  background-position: bottom;
   color: var(--marron-oscuro);
-  border-radius: 10px;
-  transition: 0.5s all;
+  transform: rotate(
+    -2deg
+  ); /* Levanta el lado derecho un poco más que el izquierdo */
+}
+
+.main-button:hover {
+  background-position: bottom;
+  color: var(--marron-oscuro);
 }
 
 /* Sección de Productos */
@@ -170,6 +184,10 @@ button {
   margin-bottom: 1rem;
   width: 40%;
   align-self: center;
+}
+
+.buy-button .fa-solid {
+  padding-left: 5px;
 }
 
 .buy-button:hover {
