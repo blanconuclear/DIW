@@ -198,6 +198,15 @@ button {
   transition: 0.5s all;
 }
 
+/*Novedades*/
+.novedades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
 /* Pie de página */
 footer {
   background-color: var(--marron-oscuro);
