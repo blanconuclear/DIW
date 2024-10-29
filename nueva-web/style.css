@@ -1,9 +1,16 @@
+/*Importar fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* Variables de Colores */
 :root {
   --marron-oscuro: #4a2c2a;
   --marron-medio: #8b5e3c;
   --beige-claro: #f5e8c7;
   --blanco: #ffffff;
+}
+
+body {
+  font-family: "Rubik Wet Paint";
 }
 
 /* Estilos generales */
@@ -14,7 +21,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--marron-oscuro);
   height: 100vh;
   width: 100%;
@@ -60,12 +67,12 @@ button {
 .main-section {
   height: 400px;
   background-image: url("img/pexels-cottonbro-8102734.jpg");
-  background-size: cover; /* Hace que la imagen cubra toda la sección */
-  background-position: center; /* Centra la imagen en la sección */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 3rem 2rem;
-  color: var(--marron-oscuro); /* Define el color de texto si es necesario */
+  color: var(--marron-oscuro);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,9 +113,7 @@ button {
 .main-button:hover {
   background-position: bottom;
   color: var(--marron-oscuro);
-  transform: rotate(
-    -2deg
-  ); /* Levanta el lado derecho un poco más que el izquierdo */
+  transform: rotate(-2deg);
 }
 
 .main-button:hover {
@@ -130,10 +135,7 @@ button {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Ajuste automático de columnas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   justify-items: center;
 }
@@ -143,7 +145,7 @@ button {
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
-  max-width: 350px; /* Ajusta el tamaño máximo si es necesario */
+  max-width: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -155,14 +157,14 @@ button {
 
 .product-image {
   width: 100%;
-  height: 200px; /* Ajusta la altura si es necesario */
+  height: 200px;
   overflow: hidden;
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen se adapte sin distorsionarse */
+  object-fit: cover;
 }
 
 .product-item h3 {
@@ -213,7 +215,7 @@ footer {
   color: var(--blanco);
   padding: 1.5rem;
   text-align: center;
-  margin-top: auto; /* Empuja el footer al final si no hay suficiente contenido */
+  margin-top: auto;
 }
 
 footer p {
@@ -248,7 +250,7 @@ footer p a:hover {
 }
 
 .social-icons li a i {
-  margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+  margin-right: 0.5rem;
 }
 
 .social-icons li a:hover {
@@ -358,6 +360,12 @@ footer p a:hover {
   font-size: 1rem;
 }
 
+textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
@@ -405,6 +413,31 @@ footer p a:hover {
   margin-bottom: 1.5rem;
   width: 700px;
 }
+/* Estilos específicos para la página Acerca de */
+.about-section {
+  padding: 2rem;
+  background-color: var(--beige-claro);
+  border-radius: 20px;
+  margin: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section h2 {
+  color: var(--marron-oscuro);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  color: var(--marron-oscuro);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  width: 700px;
+}
 
 /* Estilos para el mapa */
 .map-container {
@@ -420,4 +453,62 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/*Novedades*/
+.novedades {
+  background-color: #f9f9f9;
+  padding: 2em;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+}
+
+.novedades h4 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.novedades p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.novedades .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.novedades input[type="email"] {
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+  max-width: 300px;
+}
+
+.novedades input[type="email"]::placeholder {
+  color: #999;
+}
+
+.novedades button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  color: #fff;
+  background-color: var(--marron-medio);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.novedades button:hover {
+  background-color: var(--marron-oscuro);
 }
