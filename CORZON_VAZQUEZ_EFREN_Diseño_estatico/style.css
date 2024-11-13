@@ -359,6 +359,7 @@ footer p a:hover {
   background-color: var(--blanco);
   color: var(--marron-oscuro);
   font-size: 1rem;
+  font-family: "Rubik Wet Paint";
 }
 
 textarea {
@@ -389,31 +390,6 @@ textarea {
   color: var(--beige-claro);
 }
 
-/* Estilos específicos para la página Acerca de */
-.about-section {
-  padding: 2rem;
-  background-color: var(--beige-claro);
-  border-radius: 20px;
-  margin: 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-section h2 {
-  color: var(--marron-oscuro);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-section p {
-  color: var(--marron-oscuro);
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  width: 700px;
-}
 /* Estilos específicos para la página Acerca de */
 .about-section {
   padding: 2rem;
