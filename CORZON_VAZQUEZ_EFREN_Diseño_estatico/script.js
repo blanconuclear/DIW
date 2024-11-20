@@ -1,28 +1,50 @@
-// Función simple para cargar un archivo HTML en un contenedor
-const loadHTML = (elementId, filePath) => {
-  return fetch(filePath)
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById(elementId).innerHTML = data;
-      // Recargar iconos de FontAwesome si están presentes
-      if (window.FontAwesome) {
-        window.FontAwesome.dom.i2svg();
-      }
-    })
-    .catch((error) => {
-      console.error(`Error al cargar ${filePath}: ${error}`);
-    });
-};
+document.addEventListener("DOMContentLoaded", () => {
+  // Contenido del header como cadena de texto
+  const headerContent = `
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo_bueno.png" alt="Logo El Tablero Mágico" />
+      </a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li>
+          <a href="#carrito">Carrito <i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </nav>
+  `;
 
-// Cargar header y footer y agregar evento al menú después de cargar el header
-document.addEventListener("DOMContentLoaded", async () => {
-  await loadHTML("header", "header.html"); // Cargar el header primero
-  await loadHTML("footer", "footer.html"); // Luego cargar el footer
+  // Contenido del footer como cadena de texto
+  const footerContent = `
+    <ul class="social-icons">
+      <li>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+      </li>
+    </ul>
+    <br />
+    <p>Contacto: <a href="#">info@eltableromagico.com</a></p>
+  `;
 
-  // Ahora que el header está cargado, agregar el evento al menú hamburguesa
+  // Inserta el contenido en los elementos correspondientes del DOM
+  document.getElementById("header").innerHTML = headerContent;
+  document.getElementById("footer").innerHTML = footerContent;
+
+  // Agregar funcionalidad al menú hamburguesa
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
-
   if (menuToggle && menu) {
     menuToggle.addEventListener("click", () => {
       menu.classList.toggle("show");
