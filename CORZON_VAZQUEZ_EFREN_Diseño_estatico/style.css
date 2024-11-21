@@ -479,13 +479,22 @@ iframe {
   padding: 0.8em 1.5em;
   font-size: 1em;
   color: #fff;
-  background-color: var(--marron-medio);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: var(--marron-medio);
+  background-image: linear-gradient(
+    to bottom,
+    var(--marron-medio) 50%,
+    var(--beige-claro) 50%
+  );
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s, color 0.5s, transform 0.5s;
 }
 
 .novedades button:hover {
-  background-color: var(--marron-oscuro);
+  background-position: bottom;
+  color: var(--marron-oscuro);
+  transform: rotate(-2deg);
 }
